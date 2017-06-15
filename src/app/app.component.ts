@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Switch } from './switch/switch';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'app';
+  switches : Array<Switch> = [
+    new Switch(false),
+    new Switch(false),
+    new Switch(false),
+    new Switch(false),
+    new Switch(false),
+    new Switch(false),
+    new Switch(false),
+    new Switch(false),
+    new Switch(false),
+    new Switch(false),
+  ]
 }

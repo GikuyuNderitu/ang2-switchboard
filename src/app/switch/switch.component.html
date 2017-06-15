@@ -1,0 +1,6 @@
+<div class="container">
+  <button [ngClass]="{'on': on}" (click)="toggle()">
+    <span *ngIf="!on">Off</span>
+    <span *ngIf="on">On</span>
+  </button>
+</div>
